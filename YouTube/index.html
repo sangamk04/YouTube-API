@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Sam</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" alt="" class="menu_icon">
+            <img src="images/youtube.png" alt="" class="logo">
+
+        </div>
+
+
+        <!-- <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" class="logo" alt=""> -->
+    
+        <input type="text" id="search"  placeholder=" search" />
+   
+        <button id="searchbtn" onclick="searchVideos()">Search</button>
+    
+        <div id="search_results"></div>
+         
+       <div class="user-options">
+        <img src="images/voice-search.png" class="mic_icon" alt="">
+
+
+
+
+                <!-- <div class="nav-middle flex-div">
+                    <div class="search_box flex-div">
+                        <input type="text" id= "search_input" placeholder="Search">
+                        <img src="images/search.png" alt="">
+                    </div>
+                    <img src="images/voice-search.png" class="mic_icon" alt="">
+     -->
+
+
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/upload.png" alt="">
+            <img src="images/more.png" alt="">
+            <img src="images/notification.png" alt="">
+            <img src="images/sam.jpeg" alt="" class="user-icon" >
+        </div>
+    </nav>
+    <!-- --------------------------sidebar--------------------- -->
+    <div class="sidebar" >
+        <div class="shortcut-links">
+            <a href="#" class="links"><img src="images/home.png" alt=""><p>Home</p></a>
+            <a href="#" class="links"><img src="images/explore.png" alt=""><p>Explore</p></a>
+            <a href="#" class="links"><img src="images/subscriprion.png" alt=""><p>Subcriptions</p></a>
+            <a href="#" class="links"><img src="images/library.png" alt=""><p>Library</p></a>
+            <a href="#" class="links"><img src="images/history.png" alt=""><p>History</p></a>
+            <a href="#" class="links"><img src="images/playlist.png" alt=""><p>Playlist</p></a>
+            <a href="#" class="links"><img src="images/messages.png" alt=""><p>Messages</p></a>
+            <a href="#" class="links"><img src="images/show-more.png" alt=""><p>Show-more</p></a>
+            <hr>
+        </div>
+        <div class="subcribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href="" class="links"><img src="images/sam.jpeg" alt=""><p>Sangam</p></a>
+            <a href="" class="links"><img src="images/mini.jpeg" alt=""><p>Mini</p></a>
+            <a href="" class="links"><img src="images/sam.jpeg" alt=""><p>sunny</p></a>
+            <a href="" class="links"><img src="images/mini.jpeg" alt=""><p>Mini</p></a>
+            <a href="" class="links"><img src="images/sam.jpeg" alt=""><p>Sunny</p></a>
+        </div>
+    </div>
+
+    <div class="filters">
+        <button class="filter-options active">All</button>
+        <button class="filter-options">Sangam</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">entertainment</button>
+        <button class="filter-options">marvel</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">A.I</button>
+        <button class="filter-options">M.L</button>
+        <button class="filter-options">trending</button>
+    </div>
+
+    <script src="index.js"></script>
+    
